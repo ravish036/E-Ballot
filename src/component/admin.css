@@ -1,0 +1,24 @@
+.candidate{
+    width: 96%;
+    border: 1px solid red;
+}
+
+.VotingToggle{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.votingCard{
+    width: 45%;
+}
+.getwinner{
+    width: 100%;
+}
+
+.winner{
+    display: flex;
+    justify-content: center;
+    
+}
