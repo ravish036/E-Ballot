@@ -6,6 +6,7 @@ import AdminComponent from './component/admin_component';
 import {connectWeb3Metamask} from './web3_functions'
 import Main from './component/subcomponents/main'
 import Winner from './component/winner';
+import QR from './component/subcomponents/Qr'
 // import './Main.css'
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
               <Route index path='/' element={<Main />} />
               <Route path='/admin' element={<AdminComponent contractInstance={contractInstance} account={accounts[0]} />}/>
               <Route path="/voting" element={<VoterComponent  contractInstance={contractInstance} account={accounts[0]} />} />
+              <Route path="/qr" element={<QR  contractInstance={contractInstance} account={accounts[0]} />} />
               <Route path="/winner" element={<Winner  contractInstance={contractInstance} account={accounts[0]} />} />
               {/* <Route path='/winner' element={ <winner />} /> */}
             </Routes>

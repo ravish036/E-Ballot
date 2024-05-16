@@ -4,7 +4,7 @@ import "./admin.css"
 // import { Height } from '@mui/icons-material';
 
  function winner (){
-    const location = useLocation();
+    // const location = useLocation();
   return ( 
     <>
         <h1 style={{
@@ -13,7 +13,7 @@ import "./admin.css"
             justifyContent:"center",
             Height:"100vh"
         }} >
-        {location.state.winner}
+        {/* {location.state.winner} */}
         </h1>
     </>
   )

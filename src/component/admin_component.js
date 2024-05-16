@@ -10,7 +10,7 @@ import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
 import { useLocation, useNavigate } from 'react-router-dom';
 import {registerCandidates, whiteListAddress, getAllCandidate, getWinner, startVoting, stopVoting} from '../web3_functions'
-import QRCode from 'react-qr-code';
+import QRCode from 'qrcode';
 import './admin.css'
 // const errorMsg = (
 //     <Alert severity="error">
@@ -135,9 +135,11 @@ function AdminComponent({account, contractInstance}) {
                         </CardActions>
                         
                         <CardActions sx={{display:"flex", justifyContent:"center"}}>
-                        <TextField id="outlined-basic" label="text" variant="outlined" style={{width: '100%', marginBottom: '10px'}}
+
+                        {/* <TextField id="outlined-basic" label="text" variant="outlined" style={{width: '100%', marginBottom: '10px'}}
                                 onChange={(e)=>setText(e.target.value)}/> 
-                        <Button onClick={() => generateQR()} >Generate</Button>
+                        <Button onClick={() => generateQR()} >Generate</Button> */}
+                        
                         <br/>
                         {imgURL? 
                             (<a href={imgURL} download >

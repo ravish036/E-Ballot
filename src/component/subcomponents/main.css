@@ -155,3 +155,31 @@ button:hover .arrow:before {
   width: 100%;
   background-color: #033c58;
 }
+
+/* QR component Css */
+
+.qr{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.qrTitle{
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.reader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 27rem;
+}
+
+#reader__dashboard_section_csr{
+  display: flex;
+  justify-content: center;
+}
